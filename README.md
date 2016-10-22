@@ -17,8 +17,11 @@ TimeMarker.mark("start");
 TimeMarker.mark("end");
 ```
 
+You can group marks by calling `TimeMarker.beginGroup()` and `TimeMarker.endGroup()`.
+Time distribution will be calculated separately among groups.
+
 You can call `TimeMarker.mark()` wherever in the project.
-When you want to see the time distribution, just call `TimeMarker.report()` to log the time distribution among marks in descending order.
+When you want to see the time distribution, just call `TimeMarker.report()` to log the time distribution among marks in descending order or call `TimeMarker.reportSequentially()` to log time distribution sequentially.
 
 # Example
 
